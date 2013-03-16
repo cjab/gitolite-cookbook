@@ -1,0 +1,5 @@
+*.swp
+*.swo
+.vagrant
+.kitchen
+.DS_Store

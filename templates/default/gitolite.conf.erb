@@ -1,0 +1,7 @@
+<% @repos.each do |repo| %>
+  repo  <%= repo["id"] %>
+    RW+ = <%= node["gitolite"]["user"] %>
+  <% repo["permissions"].each do |perms, users| %>
+    <%= perms %> = <%= users.join(" ") %>
+  <% end %>
+<% end %>
